@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="inicio.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Moto Style Adhesivos</title>
+</head>
+<body>
+    <section class="home_container" id="homeContainer">
+        <nav class="home_menu">
+            <a class="home_menu_item" href="#">Inicio</a>
+            <a class="home_menu_item" href="#">Contacto</a>
+            <a class="home_menu_item" href="#">Diseños</a>
+          </nav>
+        <h2 class="home_title">Moto Style Adhesivos</h2>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+</body>
+</html>
+<script>
+    let image = document.querySelector(".home_container");
+    var image1 = () => {image.style.backgroundImage = "url(./Images/background_home1.jpg)";}
+    var image2 = () => {image.style.backgroundImage = "url(./Images/background_home2.jpg)";}
+    var image3 = () => {image.style.backgroundImage = "url(./Images/background_home3.jpg)";}
+    var image4 = () => {image.style.backgroundImage = "url(./Images/background_home4.jpg)";}
+    /*for(var i = 0; i > 10; i++){
+        setTimeout(function(){images[i].apply();}, 4000)
+    }
+    */
+    const a = new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            image1();
+            resolve("promise solved");
+        }, 5000)
+    });
+    image2();
+    a.then(res =>{
+        console.log("ImagenCargada")
+        image3();
+        const b = new Promise((resolve, reject)=> {
+            setTimeout(()=>{
+                image1();
+                resolve("promise solved");
+            }, 5000)
+        })
+        b.then(res =>{
+        console.log("ImagenCargada")
+        image1();
+        const c = new Promise((resolve, reject) =>{
+            setTimeout(()=>{
+                image4();
+                resolve("promise solved");
+            }, 5000)
+        })
+        c.then(res =>{
+        console.log("ImagenCargada")
+        image4();
+    })
+    })
+    })
+
+</script>

@@ -1,0 +1,41 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0px 0px 0px 0px;
+}
+.home_container{
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-columns: 1fr;
+    background-image:url(./Images/background_home1.jpg) ;
+    background-position-y: center;
+    background-position-x: center;
+}
+.home_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.home_menu_item{
+    color: black;
+    text-decoration: none;
+    animation-delay: 500;
+
+}
+.home_menu_item:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+.home_title{
+    font-family: 'Bebas Neue', cursive;
+    align-self: center;
+    justify-self: center;
+    font-size: 10em;
+    text-align: center;
+    color: white;
+
+}
