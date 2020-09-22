@@ -5,62 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="inicio.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Moto Style Adhesivos</title>
 </head>
-<body>
-    <section class="home_container" id="homeContainer">
+<body href="#bazinga">
+    <header class="home_container" id="homeContainer">
         <nav class="home_menu">
             <a class="home_menu_item" href="#">Inicio</a>
             <a class="home_menu_item" href="#">Contacto</a>
-            <a class="home_menu_item" href="#">Diseños</a>
+            <a class="home_menu_item" href="#">Productos</a>
           </nav>
-        <h2 class="home_title">Moto Style Adhesivos</h2>
+        <h1 class="home_title" data-aos="fade-right">Moto Style Adhesivos</h1>
+        <button class="ButtonHome">Comprar Adhesivos para mi moto!</button>
+        </header>
+    <section class="info_container">
+        <div class="info_text_container" data-aos="fade-right">
+            <p class="info_text">Impresión de Calcomanías y diseños para motos en Medellín Colombia. Imprimimos
+                tus diseño o te diseñamos el tuyo. <a href="#"class="infoLink">Perzonaliza tu moto ya!</a>
+            </p>
+        </div>
+        <img class="ImageContainer" src="./Images/logo.jpeg"/>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="products_container" data-aos="zoom-in">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h2 class="product_title">Adhesivo Valentino Rossi</h2>
+                    <img class="product_image"src="./Images/products/Product4.jpg">
+                    <p class="product_price">Precio: $4000 cop</p>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="product_title">Sticker Moto</h2>
+                    <img class="product_image"src="./Images/products/Product1.jpg">
+                    <p class="product_price">Precio: $3000 cop</p>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="product_title">Sticker Moto2</h2>
+                    <img class="product_image"src="./Images/products/Product3.jpg">
+                    <p class="product_price">Precio: $3000 cop</p>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="product_title">Sticker Harley</h2>
+                    <img class="product_image"src="./Images/products/Product5.jpg">
+                    <p class="product_price">Precio: $7000 cop</p>
+                </div>
+                 
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section class="services_container" data-aos="zoom-in-left">
+        <div class="services_item">
+            <img class="services_image" src="./Icons/HandShake.png">
+            <p class="services_text">Confiabilidad</p>
+        </div>
+        <div class="services_item">
+            <img class="services_image" src="./Icons/Design.png">
+            <p class="services_text">Diseño</p>
+        </div>
+        <div class="services_item">
+            <img class="services_image" src="./Icons/Deliver.png">
+            <p class="services_text">Entrega Rapida</p>
+        </div>
+    </section>
+    <footer class="footer_container" data-aos="fade-bottom">
+        <div class="footer_social_media">
+            <a href="tel:123-456-7890" class="footer_social_media_link"><div class="footer_social_media_item">
+                <p class="footer_social_media_text">+57 318 377 2246</p>
+                <img class="footer_social_media_img" src="./Icons/PhoneIcon.png">
+            </div></a>
+            <a href="https://www.facebook.com/motostyle.tapizados.9" target="_blank" class="footer_social_media_link"><div class="footer_social_media_item">
+                <p class="footer_social_media_text">Facebook</p>
+                <img class="footer_social_media_img" src="./Icons/FacebookIcon.png">
+            </div></a>
+            <a href="https://wa.link/bplzp8" target="_blank" class="footer_social_media_link"><div class="footer_social_media_item">
+                <p class="footer_social_media_text">Whatsapp</p>
+                <img class="footer_social_media_img"  src="./Icons/WhatsappIcon.png">
+            </div></a>
+            <a href="#" class="footer_social_media_link"><div class="footer_social_media_item">
+                <p class="footer_social_media_text">Instagram</p>
+                <img class="footer_social_media_img" src="./Icons/InstagramIcon.png">
+            </div></a>
+        </div>
+        <p class="footer_waterMark">Juan José Londoño 2020</p>
+    </footer>
 </body>
 </html>
+<script src="./Carousel.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    let image = document.querySelector(".home_container");
-    var image1 = () => {image.style.backgroundImage = "url(./Images/background_home1.jpg)";}
-    var image2 = () => {image.style.backgroundImage = "url(./Images/background_home2.jpg)";}
-    var image3 = () => {image.style.backgroundImage = "url(./Images/background_home3.jpg)";}
-    var image4 = () => {image.style.backgroundImage = "url(./Images/background_home4.jpg)";}
-    /*for(var i = 0; i > 10; i++){
-        setTimeout(function(){images[i].apply();}, 4000)
-    }
-    */
-    const a = new Promise((resolve, reject) => {
-        setTimeout(()=>{
-            image1();
-            resolve("promise solved");
-        }, 5000)
-    });
-    image2();
-    a.then(res =>{
-        console.log("ImagenCargada")
-        image3();
-        const b = new Promise((resolve, reject)=> {
-            setTimeout(()=>{
-                image1();
-                resolve("promise solved");
-            }, 5000)
-        })
-        b.then(res =>{
-        console.log("ImagenCargada")
-        image1();
-        const c = new Promise((resolve, reject) =>{
-            setTimeout(()=>{
-                image4();
-                resolve("promise solved");
-            }, 5000)
-        })
-        c.then(res =>{
-        console.log("ImagenCargada")
-        image4();
-    })
-    })
-    })
+    AOS.init();
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+</script>
+<script src="path/to/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#bazinga"]', {
+	speed: 300
+});
 </script>
