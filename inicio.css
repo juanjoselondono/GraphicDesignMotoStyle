@@ -156,7 +156,7 @@ body{
 .footer_container{
     display: grid;
     grid-template-rows: 1fr 0.4fr;
-    background-color: rgb(255, 65, 65);
+    background-color: black;
     color: white;
 }
 .footer_social_media{
@@ -182,4 +182,19 @@ body{
 }
 a{
     text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+    .home_title{
+        font-size: 3em;
+    }
+    .home_container{
+        grid-template-rows: 0.5fr 2fr 1fr;
+    }
+    .ButtonHome{
+        height: 70%;
+    }
+    .info_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
