@@ -104,9 +104,8 @@ body{
 .product_price{
     width: 100%;
     height: 70%;
-    background-color: rgb(51, 82, 255);
-    border: solid rgb(255, 65, 65) 15px;
-    color: white;
+    background-color: white;
+    color: black;
     align-self: center;
     justify-self: center;
     font-size: 2em;
@@ -187,6 +186,9 @@ a{
     text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
+    body{
+        grid-template-rows: 1.8fr 2fr 2fr 2fr 0.8fr ; 
+    }
     .home_title{
         font-size: 3em;
     }
@@ -213,8 +215,7 @@ a{
         background-color: white;
     }
     .product_image{
-
         width: 400px;
-        height: 150%;
+        height: 100%;
     }
 }
