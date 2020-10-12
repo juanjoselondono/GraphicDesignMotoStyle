@@ -192,6 +192,9 @@ a{
     .home_title{
         font-size: 3em;
     }
+    .home_menu_item{
+        font-size: 0.5em;
+    }
     .ButtonHome{
         width: 80%;
         height: 20%;
@@ -217,5 +220,11 @@ a{
     .product_image{
         width: 400px;
         height: 100%;
+    }
+    .footer_social_media_text{
+        font-size: 0.2;
+    }
+    .footer_social_media_img{
+        height: 50%;
     }
 }
